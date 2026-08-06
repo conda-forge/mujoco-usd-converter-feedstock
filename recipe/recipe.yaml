@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - mujoco >=3.10,<3.11
+    - mujoco >=3.11,<3.12
     - usd-exchange >=2.2.2
     - newton-usd-schemas >=0.4.0
     - numpy-stl >=3.2
