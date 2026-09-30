@@ -1,5 +1,5 @@
 context:
-  version: "0.4.2"
+  version: "0.6.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/newton-physics/mujoco-usd-converter/archive/refs/tags/v${{ version }}.zip
-  sha256: fc1628a440a0fedc6bb884a40e11a0c81ca66e5030cef9ee57f285f1f06c2983
+  sha256: 6e73ecc2df22cdc1195981c7a68fe0447c2c222e5b73306071dce1fdd8b046b7
 
 build:
   noarch: python
@@ -26,9 +26,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - mujoco >=3.10,<3.11
+    - mujoco >=3.12,<3.13
     - usd-exchange >=2.2.2
-    - newton-usd-schemas >=0.4.0
+    - newton-usd-schemas >=0.5.0
     - numpy-stl >=3.2
     - tinyobjloader >=2.0.0rc13
 
@@ -37,7 +37,9 @@ tests:
       imports:
         - mujoco_usd_converter
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - mujoco_usd_converter --help
   # Scripts are currently failing due to missing modules:
