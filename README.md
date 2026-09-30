@@ -194,6 +194,3 @@ Feedstock Maintainers
 
 * [@diegoferigo](https://github.com/diegoferigo/)
 
-
-<!-- dummy commit to enable rerendering -->
-
