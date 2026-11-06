@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.9.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/newton-physics/mujoco-usd-converter/archive/refs/tags/v${{ version }}.zip
-  sha256: 085d4df528a2d720ecbfacd1f7f09372c708f1aca6bf9e4e47f7b503fa55d79b
+  sha256: 69c59d3b1f763783477a5d5175fdb0ffc3a17e50f7d8715a0a0e66a368d5356c
 
 build:
   noarch: python
