@@ -1,5 +1,5 @@
 context:
-  version: "0.9.1"
+  version: "0.10.0"
   build_number: 0
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/newton-physics/mujoco-usd-converter/archive/refs/tags/v${{ version }}.zip
-  sha256: 15c5bbdc0afecc0e74b92c9faed80eefe85275327354626af0a435d4916e49e1
+  sha256: 30c14702292144b09551fe539c7dc7525c01d31e5ad9a946d5150a06c616c11f
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - mujoco >=3.16,<3.18
+    - mujoco >=4.0.1,<4.1
     - usd-exchange >=3.0.1
     - newton-usd-schemas >=0.5.0
     - numpy-stl >=3.2
